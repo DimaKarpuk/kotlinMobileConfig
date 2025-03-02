@@ -2,7 +2,7 @@ package config
 
 import org.aeonbits.owner.ConfigFactory
 
-class ConfigReader {
+class EmulatorConfigReader {
     companion object {
         val emulatorConfig: EmulatorConfig by lazy {
             ConfigFactory.create(EmulatorConfig::class.java, System.getProperties())
